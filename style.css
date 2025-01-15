@@ -6,8 +6,8 @@
 }
 
 body {
-    background-color: black;
-    color: turquoise;
+    background: black;
+    color: white;
 }
 
 .header {
@@ -195,11 +195,11 @@ body {
 .sub-title{
     text-align: center;
     font-size: 60px;
-    padding-bottom: 0%;
-    color: aliceblue;
+    padding-bottom: 20px;
+    padding-top: 30px;
 }
 .sub-title span{
-    color: aqua;
+    color: #0ef;
 }
 .container{
     padding: 90px;
@@ -285,16 +285,16 @@ section{
     font-size: 23px;
 }
 .Technical-bars .bar{
-    margin-top: 40px 0;
+    margin: 40px 0;
 }
 .Technical-bars .bar:first-child{
     margin-top: 0;
 }
-.Technical-bars .ba:last-child{
-    margin-top: 0;
+.Technical-bars .bar:last-child{
+    margin-bottom: 0;
 }
 .Technical-bars .bar .info{
-    margin-top: 5px;
+    margin-bottom: 5px;
 }
 .Technical-bars .bar .info span{
     font-size: 17px;
@@ -307,10 +307,10 @@ section{
     border-radius: 10px;
     width: 100%;
     height: 5px;
-    background-color: #000000;
-    animation: animate 1s cubic-bezier(1,0,0,5,1)forwards;
-    transform: scaleX(0);
-    transform-origin: left;
+   background-color: white;
+   animation: animate 1s cubic-bezier(1,0,0.5,1)forwards;
+   transform: scaleX(0);
+   transform-origin: left;
 }
 @keyframes animate{
     100%{
@@ -318,17 +318,30 @@ section{
     }
 }
 .Technical-bars .bar .progress-line span{
-   height: 100%;
-   background-color: #0ef;
-   position: absolute;
-   border-radius: 10px;
-   animation: animate 1s 1s cubic-bezier(1,0,0,5,1)forwards;
-   transform: scaleX(0);
-   transform-origin: left;
+    height: 100%;
+    position: absolute;
+    border-radius: 10px;
+    background-color: rgb(115, 0, 255);
+    animation: animate 1s 1s cubic-bezier(1,0,0.5,1)forwards;
+    transform: scaleX(0);
+    transform-origin: left;
 }
 .progress-line.html span{
     width: 90%;
 }
+.progress-line.css span{
+    width: 75%;
+}
+.progress-line.JavaScript span{
+    width: 50%;
+}
+.progress-line.Java span{
+    width: 20%;
+}
+.progress-line.c span{
+    width: 50%;
+}
+
 
 @keyframes slideRight {
     0% {
